@@ -19,7 +19,7 @@ public class JobController {
     @GetMapping
     public ResponseEntity<List<Job>> findAll(){
     	List<Job> jobs = new ArrayList<>();
-    	Job job = new Job((long)111,"A","B","0", "1000", "Ho Chi Minh");
+    	Job job = new Job((long)111,"A","B","0", "1000", "Ho Chi Minh city");
     	jobs.add(job);
         return ResponseEntity.ok(jobs);
     }
